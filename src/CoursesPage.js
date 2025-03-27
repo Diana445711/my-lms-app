@@ -1,7 +1,10 @@
+import Header from "./components/Header";
+import CourseCatalog from "./components/CourseCatalog";
+import EnrollmentList from "./components/EnrollmentList";
+import Footer from "./components/Footer";
 
 
-
-function Homepage() {
+function CoursesPage() {
     return (
         <div className="courses-page">
             <Header />
@@ -14,6 +17,6 @@ function Homepage() {
     );
 }
   
-export default Homepage;
+export default CoursesPage;
 
 

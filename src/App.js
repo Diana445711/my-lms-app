@@ -1,17 +1,22 @@
+
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Homepage from "./Homepage";
-import { BrowserRouter } from "react-router-dom";
-
-
+import CoursesPage from "./CoursesPage";
+import LoginForm from "./LoginForm"; 
 
 function App() {
   return (
     <BrowserRouter>
-      <div>
-        <Homepage />
-      </div>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/courses" element={<CoursesPage />} />
+        <Route path="/login" element={<LoginForm />} />
+      </Routes>
     </BrowserRouter>
   );
 }
 
 export default App;
+
+
