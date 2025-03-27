@@ -1,3 +1,5 @@
+import course1 from "../images/course1.jpg";
+
 const courses = [
     {
         id: 1,
@@ -5,7 +7,7 @@ const courses = [
         instructor: "Dr. John Smith",
         description: "Master HTML, CSS, and JavaScript.",
         duration: "8 weeks",
-        image: "images/course1.jpg"
+        image: course1
     },
     {
         id: 2,
@@ -13,7 +15,7 @@ const courses = [
         instructor: "Dr. Emily Johnson",
         description: "Learn Python, data analysis, and machine learning.",
         duration: "10 weeks",
-        image: "images/course1.jpg"
+        image: course1
       },
       {
         id: 3,
@@ -21,7 +23,7 @@ const courses = [
         instructor: "Prof. Mark Williams",
         description: "Understand security principles and ethical hacking.",
         duration: "12 weeks",
-        image: "images/course1.jpg"
+        image: course1
       },
       {
         id: 4,
@@ -29,7 +31,7 @@ const courses = [
         instructor: "Dr. Kelly Brown",
         description: "Build apps for iOS and Android using React Native.",
         duration: "8 weeks",
-        image: "images/course1.jpg"
+        image: course1
       },
       {
         id: 5,
@@ -37,7 +39,7 @@ const courses = [
         instructor: "Prof. Robert White",
         description: "Dive into AI concepts, neural networks, and deep learning.",
         duration: "14 weeks",
-        image: "images/course1.jpg"
+        image: course1
       },
       {
         id: 6,
@@ -45,7 +47,7 @@ const courses = [
         instructor: "Dr. Linda Davis",
         description: "Explore AWS, Azure, and Google Cloud platforms.",
         duration: "10 weeks",
-        image: "images/course1.jpg"
+        image: course1
       },
       {
         id: 7,
@@ -53,7 +55,7 @@ const courses = [
         instructor: "Prof. Michael Harris",
         description: "Learn about blockchain, cryptocurrencies, and smart contracts.",
         duration: "9 weeks",
-        image: "images/course1.jpg"
+        image: course1
       },
       {
         id: 8,
@@ -61,7 +63,7 @@ const courses = [
         instructor: "Dr. James Anderson",
         description: "Create 2D and 3D games using Unity and Unreal Engine.",
         duration: "11 weeks",
-        image: "images/course1.jpg"
+        image: course1
       },
       {
         id: 9,
@@ -69,7 +71,7 @@ const courses = [
         instructor: "Prof. Lisa Carter",
         description: "Master user experience and interface design principles.",
         duration: "8 weeks",
-        image: "images/course1.jpg"
+        image: course1
       },
       {
         id: 10,
@@ -77,7 +79,7 @@ const courses = [
         instructor: "Dr. William Martinez",
         description: "Learn CI/CD, automation, and cloud-native deployment.",
         duration: "10 weeks",
-        image: "images/course1.jpg"
+        image: course1
       }
     ];
 

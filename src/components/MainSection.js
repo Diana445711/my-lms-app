@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import courses from "../data/courses";
 import testimonials from "../data/testimonials";
-
+import ReactDOM from "react-dom";
+import '../App.css';
 
 function MainSection() {
   const [featuredCourses, setFeaturedCourses] = useState([]);
