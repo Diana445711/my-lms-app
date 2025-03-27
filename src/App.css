@@ -33,6 +33,7 @@ nav {
   padding: 10px;
   display: flex;
   justify-content: space-around; /* Even spacing */
+  align-items: center;
 }
 
 nav a {
@@ -133,7 +134,8 @@ table[class="cv"] td {
 }
 
 table[class="cv"] td img {
-  width: 100%;
+  width: 35%;
+  height: auto;
   border-radius: 5px;
 }
 

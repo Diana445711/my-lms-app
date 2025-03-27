@@ -48,8 +48,8 @@ function MainSection() {
               <tr key={index}>
                 <td>
                   <p>{testimonial.studentName}</p>
-                  <p>{testimonial.review}</p>
-                  <p className="text-yellow-500">
+                  <p><i>{testimonial.review}</i></p>
+                  <p>
                     {"★".repeat(Math.round(testimonial.rating)) + "☆".repeat(5 - Math.round(testimonial.rating))}
                   </p>
                 </td>

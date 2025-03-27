@@ -8,7 +8,7 @@ function Header() {
   return (
     <header>
       <img src={logo} alt="LMS Logo" />
-      <h1>LMS</h1>
+      
       <nav>
         <Link to="/"> Home </Link>
         <Link to="/courses"> Courses </Link>
