@@ -8,9 +8,17 @@ function MainSection() {
   const [featuredCourses, setFeaturedCourses] = useState([]);
   const [randomTestimonials, setRandomTestimonials] = useState([]);
 
+  function pickingRandom(array, numberItems) {
+    let random = array.slice().sort(() => Math.random() - 0.5);
+    return random.slice(0, numberItems); 
+  }
+  
   useEffect(() => {
-    setFeaturedCourses(courses.sort(() => 0.5 - Math.random()).slice(0, 3));
-    setRandomTestimonials(testimonials.sort(() => 0.5 - Math.random()).slice(0, 2));
+    const randomCourses = pickingRandom(courses, 3);
+    const randomTestimonials = pickingRandom(testimonials, 2);
+  
+    setFeaturedCourses(randomCourses);
+    setRandomTestimonials(randomTestimonials);
   }, []);
  
   return(
