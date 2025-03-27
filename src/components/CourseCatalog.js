@@ -5,7 +5,7 @@ import "../App.css";
 
 function CourseCatalog({ onEnroll }) {
   return (
-    <div className="catalog">
+    <div>
       <h2>Course Catalog</h2>
       <div className="listCourses">
         {courses.map((course) => (

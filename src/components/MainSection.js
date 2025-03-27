@@ -31,7 +31,7 @@ function MainSection() {
         </main>
 
         <div>
-        <h2>Featured Courses</h2>
+        <h2 className = "text">Featured Courses</h2>
         <table className="cv">
         <tbody>
             {featuredCourses.map((course) => (
@@ -49,7 +49,7 @@ function MainSection() {
         </div>
 
         <div>
-        <h2>Student Testimonials</h2>
+        <h2 className="text">Student Testimonials</h2>
         <table className="cv">
           <tbody>
             {randomTestimonials.map((testimonial, index) => (
