@@ -10,7 +10,7 @@ function CoursesPage() {
             <Header />
             <div className="content">
                 <CourseCatalog />
-                <EnrollmentList />
+                {/*<EnrollmentList/>*/}     
             </div>
             <Footer />
         </div>
