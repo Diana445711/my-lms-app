@@ -308,3 +308,15 @@ footer {
 .text {
   padding-left: 20px;
 }
+
+.login-form {
+
+  margin-top: 30px;
+}
+
+
+.enrolled-courses-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap; 
+}

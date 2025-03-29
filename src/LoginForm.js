@@ -6,7 +6,7 @@ function LoginForm() {
     return (
       <div>
         <Header />
-        {/*<LoginForm/>*/}
+        <LoggingForm/>
         <Footer />
       </div>
     );
