@@ -58,33 +58,35 @@ const LoginForm = () => {
     try {
         const response = await fetch('https://jsonplaceholder.typicode.com/users');
         const users = await response.json();
-        const validUser = users.some(
-            user => user.username === formData.username || 
-                    user.email === formData.username  // Fixed typo here
+
+        const matchedUser = users.find(
+          (user) =>
+            user.username === formData.username &&
+            user.email === formData.password
         );
-    
-        if (validUser) {
-            setMessage({
-                type: 'success',
-                text: 'Login successful! Redirecting...'
-            });
-            setAuth({
-                isAuthenticated: true,
-                username: formData.username,
-                error: ''
-            });
+
+        if (matchedUser) {
+          setMessage({
+            type: 'success',
+            text: 'Login successful! Redirecting...',
+          });
+          setAuth({
+            isAuthenticated: true,
+            username: matchedUser.username,
+            error: '',
+          });
         } else {
-            setMessage({
-                type: 'error',
-                text: 'Invalid username or password'
-            });
-        }
-    } catch (error) {
-        setMessage({
+          setMessage({
             type: 'error',
-            text: 'Login failed. Please try again'
+            text: 'Invalid username or password',
+          });
+        }
+      } catch (error) {
+        setMessage({
+          type: 'error',
+          text: 'Login failed. Please try again',
         });
-    }
+      }
   };
 
   return (
