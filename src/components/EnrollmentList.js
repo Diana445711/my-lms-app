@@ -40,6 +40,7 @@ const EnrollmentList = ({ enrolledCourses, setEnrolledCourses }) => {
           ))}
         </div>
       )}
+      <p style={{ marginTop: "1rem" }}>Total Enrolled Courses: {enrolledCourses.length}</p>
       <p style={{ marginTop: "1rem" }}>Total Credit Hours: {totalCredits}</p>
     </div>
   );
