@@ -6,15 +6,20 @@ import '../App.css';
 
 function Header() {
   return (
+    <div>
     <header>
       <img src={logo} alt="LMS Logo" />
-      
+      <h1>LMS - Learning Management System</h1>
+      </header>
+      <div>
       <nav>
         <Link to="/"> Home </Link>
         <Link to="/courses"> Courses </Link>
         <Link to="/login"> Login </Link>
       </nav>
-    </header>
+      </div>
+    
+    </div>
   );
 };
 

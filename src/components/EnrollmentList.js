@@ -24,9 +24,9 @@ const EnrollmentList = ({ enrolledCourses, setEnrolledCourses }) => {
 
   return (
     <div className="enrollment-list">
-      <h2>Enrolled Courses</h2>
+      <h2 className="text">Enrolled Courses</h2>
       {enrolledCourses.length === 0 ? (
-        <p>No courses enrolled yet.</p>
+        <p className="text">No courses enrolled yet.</p>
       ) : (
         <div className="listCourses">
           {enrolledCourses.map((course) => (
@@ -40,8 +40,8 @@ const EnrollmentList = ({ enrolledCourses, setEnrolledCourses }) => {
           ))}
         </div>
       )}
-      <p style={{ marginTop: "1rem" }}>Total Enrolled Courses: {enrolledCourses.length}</p>
-      <p style={{ marginTop: "1rem" }}>Total Credit Hours: {totalCredits}</p>
+      <p className="text" style={{ marginTop: "1rem" }}>Total Enrolled Courses: {enrolledCourses.length}</p>
+      <p className="text" style={{ marginTop: "1rem" }}>Total Credit Hours: {totalCredits}</p>
     </div>
   );
 };
